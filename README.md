@@ -5,7 +5,6 @@ Sample dev environment. Nothing special, other than being some boiler plate for 
 
 ## Dependancies
 
----
 The following is required for this environment
 
 - Docker (Docker Desktop, etc)
@@ -14,19 +13,16 @@ The following is required for this environment
 
 ## Project Source
 
----
 Usually, I use an init script to sym link a project into the dev environment. Usually allows me to keep project source isolated from whatever base docker enviroment I am using for the project.
 <br/><br/>
 
 ## ENV files need to be generated.
 
----
 envs for docker-compose should be generated. These are used for the mssql instance and the php instance. Typically they contain sensitive information we don't want added to git. If passwords or keys are found within a repository, they should be changed and removed from the git workflow and saved as a local file (files can be ignored in `.gitignore`)
 <br/><br/>
 
 ## Sample ENV
 
----
 `sqlserver.env`
 ```
 ACCEPT_EULA=Y
