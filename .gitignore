@@ -1,0 +1,19 @@
+## gitignore
+
+## Workspace
+.idea/
+.vscode/
+
+## Certs
+certs/*.crt
+*/*.crt
+
+## ENVs
+env/*.env
+
+## MSSQL files
+mssql/backup/*
+
+## SRC folder
+src/*
+# src
